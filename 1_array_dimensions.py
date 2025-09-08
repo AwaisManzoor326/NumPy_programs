@@ -1,0 +1,33 @@
+import numpy as np
+
+# 0-D Arrays......................
+arr1 = np.array(42)
+print("0-D Array:", arr1)
+print("Type of 0-D Array:", type(arr1))
+print(arr1.ndim, "dimension(s)\n")      # check number of dimensions.....
+
+# 1-D Arrays......................
+arr2 = np.array([1, 2, 3, 4, 5])
+print("1-D Array:", arr2)
+print("Type of 1-D Array:", type(arr2))
+print(arr2.ndim, "dimension(s)\n")      # check number of dimensions.....
+
+
+# 2-D Arrays......................
+arr3 = np.array([[1, 2, 3], [4, 5, 6]])
+print("2-D Array:\n", arr3)
+print("Type of 2-D Array:", type(arr3))
+print(arr3.ndim, "dimension(s)\n")      # check number of dimensions.....
+
+# 3-D Arrays......................
+arr4 = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+print("3-D Array:\n", arr4)
+print("Type of 3-D Array:", type(arr4))
+print(arr4.ndim, "dimension(s)\n")      # check number of dimensions.....
+
+
+# use ndmin= argument to create arrays with a defined number of dimensions.........
+arr5 = np.array([1, 2, 3, 4, 5], ndmin=10)
+print("Array with 5 dimensions:\n", arr5)
+print("Type of Array with 5 dimensions:", type(arr5))
+print(arr5.ndim, "dimension(s)")      # check number of dimensions.....
