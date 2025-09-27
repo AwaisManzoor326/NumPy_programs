@@ -1,3 +1,5 @@
+import requests
 
-arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-print(arr.dtype) # prints datatype of array elements
+x = requests.get('https://w3schools.com/python/demopage.htm')
+
+print(x.text)

@@ -13,5 +13,3 @@ print(arr2)
 print(type(arr2))
 
 # print(np.__version__)
-
-
